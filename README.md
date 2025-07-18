@@ -31,7 +31,9 @@ It includes schema creation, sample data insertion, and query operations that mi
 
 ## 📸 Screenshots
 
-(You can upload LiveSQL screenshots to the `/screenshots/` folder)
+
+<img width="1920" height="1080" alt="Screenshot (6)" src="https://github.com/user-attachments/assets/57257f8c-8e13-4621-b947-a76c364103c8" />
+<img width="1920" height="1080" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/c983ea5a-af28-4c76-987a-54054fc9d357" />
 
 ---
 
