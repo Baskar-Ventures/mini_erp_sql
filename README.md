@@ -32,7 +32,7 @@ It includes schema creation, sample data insertion, and query operations that mi
 ## 📸 Screenshots
 
 
-`/screenshots/`
+`screenshots/`
 ---
 
 ## 📬 Contact
