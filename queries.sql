@@ -1,10 +1,7 @@
--- Fetch all inventory items
-SELECT * FROM Inventory;
+select * from departments;
 
--- Fetch customers with ID > 100
-SELECT * FROM Customers WHERE CustomerID > 100;
+select * from employees;
 
--- Join inventory and customers (demo purpose)
-SELECT c.CustomerName, i.ItemName
-FROM Customers c
-JOIN Inventory i ON c.CustomerID = i.ItemID; -- Just for sample
+select dept_if from employees;
+
+select dept_name from departments; 
