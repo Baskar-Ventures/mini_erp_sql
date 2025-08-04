@@ -1,50 +1,78 @@
-# 🧾 Mini ERP SQL Project
+# 🧠 Oracle SQL – Mini HR Database (19c Compatible)
 
-This is a beginner-level ERP system simulation using **Oracle SQL**.  
-It includes schema creation, sample data insertion, and query operations that mimic how real-world ERP systems manage inventory and customer data.
-
----
-
-## 📂 Features
-
-- Inventory table for item tracking  
-- Customer table for contact records  
-- Insert and view records using SQL  
-- Basic join and filter operations  
+Welcome! This repository contains a hands-on **Mini Human Resources (HR) Database** project designed and built by **Baskar.inco**, focused on real-world enterprise SQL practices using **Oracle 19c**.
 
 ---
 
-## 🛠 Tools Used
+## 📌 About the Project
 
-- Oracle SQL Developer  
-- LiveSQL (https://livesql.oracle.com)
+This SQL project simulates the database layer of a simple HR system. It covers:
 
----
+- ✅ Relational table design
+- ✅ Data integrity using **primary, foreign, unique, and check constraints**
+- ✅ Sample data insertion
+- ✅ Oracle-compliant SQL syntax
 
-## 📁 Files Included
-
-- `schema.sql`: Table creation queries  
-- `data.sql`: Sample INSERT statements  
-- `queries.sql`: SELECT, JOIN, and WHERE queries
+This is perfect for practicing core SQL skills needed for **ERP systems**, **backend data design**, and **interview-level database logic**.
 
 ---
 
-## 📸 Screenshots
+## 🗃️ Tables Included
 
+### 🔹 `departments`
+| Column     | Type          | Constraints           |
+|------------|---------------|------------------------|
+| dept_id    | NUMBER        | Primary Key           |
+| dept_name  | VARCHAR2(50)  | NOT NULL, UNIQUE      |
+| location   | VARCHAR2(50)  | NOT NULL              |
 
-<img width="1920" height="1080" alt="Screenshot (5)" src="https://github.com/user-attachments/assets/10619e4a-ed21-4678-b7b6-47ddd9b81420" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/bc0dc8f5-47d9-4d98-a8e5-db57536a5166" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/48de0bed-446b-4338-bf51-e26ebbb9d091" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/db8c2802-ee15-4348-be5d-81f8ed0ff26e" />
-
-<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/0a94502d-7e24-4223-afdf-257c4c1d0dd3" />
+### 🔹 `employees`
+| Column     | Type           | Constraints                       |
+|------------|----------------|------------------------------------|
+| emp_id     | NUMBER         | Primary Key                        |
+| emp_name   | VARCHAR2(50)   | NOT NULL                           |
+| job_title  | VARCHAR2(50)   | NOT NULL                           |
+| hire_date  | DATE           | Optional (can be set to SYSDATE)   |
+| salary     | NUMBER(8,2)    | Must be > 0 (`CHECK`)              |
+| dept_id    | NUMBER         | Foreign Key → `departments.dept_id` |
 
 ---
 
-## 📬 Contact
+## 📥 Sample Insert Data
 
-Made with calm focus by **Baskar.inco**  
-[LinkedIn](https://linkedin.com/in/baskarinc) | [GitHub](https://github.com/Baskar-Ventures)
+- 2 Departments (Finance, Sales)
+- 4 Employees assigned across those departments
+
+---
+
+## 🧪 How to Run
+
+You can execute this project in:
+- 🔹 **Oracle Live SQL** → [https://livesql.oracle.com](https://livesql.oracle.com)
+- 🔹 Oracle SQL Developer (connected to Oracle 19c or 21c)
+- 🔹 Oracle Cloud Free Tier Autonomous DB
+
+---
+
+## 🛠️ Skills Demonstrated
+
+- Table creation with constraints
+- Foreign key linking and validation
+- Data consistency and validation rules
+- Enterprise-style naming conventions
+- Oracle-friendly SQL coding
+
+---
+
+## 🚀 Author
+
+**Baskar R**  
+Final-year B.E. Electronics & Communication Engineering  
+Aspiring Oracle ERP Consultant & SQL Specialist  
+🔗 [LinkedIn](https://www.linkedin.com/in/baskarinc)  
+🌐 [Portfolio](https://profilebaskar.lovable.app)
+
+---
+
+> 💡 *“Database isn’t just storage — it’s strategy.”*  
+> — Baskar.inco
